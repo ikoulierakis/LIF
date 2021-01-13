@@ -29,29 +29,16 @@ where:
 ### output_file format
 Every line in the output file inlcudes the indentification number of the neuron, the potential of the neuron, the time step and the number of times the neuron fired between two consecutive sampling steps.
 
-##example.sh
+## example.sh
 ```
-#!/usr/bin/gnuplot -p
-set output file.".png"
-set terminal png
-set multiplot layout 2, 1
-set lmargin at screen 0.15
-set rmargin at screen 0.8
+#!/bin/bash
 
-set title "Space-Time"
-input=file.".dat"
+#run simulation
+./lif_nonlocal_diag example/example.dat < example/params
 
-set xrange [0:1000]
-set yrange [0:10000]
-set boxwidth 0.8
-plot [][] input u 1:3:2 with image
+#plot results
+python3 freq.py example/example.dat 500 #calculates the mean phase velocity starting from 500 t.u.
+gnuplot -e "file='example/example'" space_time_plot.gnu
+rm freq.out
 
-set title "Space-Frequency"
-set autoscale
-unset key
-input="freq.out"
-set boxwidth 0.8
-plot input with lines
-
-unset multiplot
 ```
