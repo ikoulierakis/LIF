@@ -29,7 +29,7 @@ where:
 ### output_file format
 Every line in the output file inlcudes the indentification number of the neuron, the potential of the neuron, the time step and the number of times the neuron fired between two consecutive sampling steps.
 
-## example.sh
+## example
 ```
 #!/bin/bash
 
