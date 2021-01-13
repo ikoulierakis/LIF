@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #run simulation
-./lif_nonlocal_diag example/example.out < example/params
+./lif_nonlocal_diag example/example.dat < example/params
 
 #plot results
 python3 freq.py example/example.dat
