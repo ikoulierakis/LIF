@@ -1,13 +1,13 @@
 # LIF
 Implementation of Leaky Integrate and Fire model for nodes arranged in a ring with non-local and diagonal connectivity.
 
-#Dependencies
-gnuplot
+# Dependencies
+gnuplot 
 
 # Usage
 ./lif_nonlocal_diagonal outputfile < input_file
 
-###input_file format
+### input_file format
 ```
 sigma_diag
 sigma_nl
