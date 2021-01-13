@@ -26,3 +26,7 @@ where:
   
   seed:       seed for the random initialization of the neurons
   
+### output_file format
+```
+\# neuron 
+```
