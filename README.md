@@ -16,6 +16,7 @@ R_nl
 seed
 ```
 where: 
+  
   sigma_diag: the coupling strength of the diagonal connectivity
   
   sigma_nl:   the coupling strength of the non-local connectivity
