@@ -1,4 +1,5 @@
 all: prog
+	chmod +x example.sh
 CC=gcc
 CFLAGS= -O3 -march=native
 prog: lif_nonlocal_diag.c
