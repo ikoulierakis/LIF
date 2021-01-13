@@ -1,6 +1,21 @@
 # LIF
 Implementation of Leaky Integrate and Fire model for nodes arranged in a ring with non-local and diagonal connectivity.
 
+If you use this code, please cite:
+Tsigkri-DeSmedt, ND., Koulierakis, I., Karakos, G. et al. Synchronization patterns in LIF neuron networks: merging nonlocal and diagonal connectivity. Eur. Phys. J. B 91, 305 (2018). https://doi.org/10.1140/epjb/e2018-90478-8
+```
+@article{tsigkri2018synchronization,
+  title={Synchronization patterns in LIF neuron networks: merging nonlocal and diagonal connectivity},
+  author={Tsigkri-DeSmedt, Nefeli-Dimitra and Koulierakis, Ioannis and Karakos, Georgios and Provata, Astero},
+  journal={The European Physical Journal B},
+  volume={91},
+  number={12},
+  pages={305},
+  year={2018},
+  publisher={Springer}
+}
+```
+
 # Dependencies
 gnuplot 
 
