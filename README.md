@@ -26,6 +26,8 @@ where:
   
   seed:       seed for the random initialization of the neurons
   
+**Note:** The total number of neighbours for each neuron is `2*R_diag+1 + 2*R_nl` 
+  
 ### output_file format
 Every line in the output file inlcudes the indentification number of the neuron, the potential of the neuron, the time step and the number of times the neuron fired between two consecutive sampling steps.
 
