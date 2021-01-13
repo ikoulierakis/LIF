@@ -27,6 +27,31 @@ where:
   seed:       seed for the random initialization of the neurons
   
 ### output_file format
+Every line in the output file inlcudes the indentification number of the neuron, the potential of the neuron, the time step and the number of times the neuron fired between two consecutive sampling steps.
+
+##example.sh
 ```
-\# neuron 
+#!/usr/bin/gnuplot -p
+set output file.".png"
+set terminal png
+set multiplot layout 2, 1
+set lmargin at screen 0.15
+set rmargin at screen 0.8
+
+set title "Space-Time"
+input=file.".dat"
+
+set xrange [0:1000]
+set yrange [0:10000]
+set boxwidth 0.8
+plot [][] input u 1:3:2 with image
+
+set title "Space-Frequency"
+set autoscale
+unset key
+input="freq.out"
+set boxwidth 0.8
+plot input with lines
+
+unset multiplot
 ```
