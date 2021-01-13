@@ -17,8 +17,12 @@ seed
 ```
 where: 
   sigma_diag: the coupling strength of the diagonal connectivity
+  
   sigma_nl:   the coupling strength of the non-local connectivity
+  
   R_diag:     the couling range of the diagonal connectivity
+  
   R_nl:       the couling range of the non-local connectivity
+  
   seed:       seed for the random initialization of the neurons
   
